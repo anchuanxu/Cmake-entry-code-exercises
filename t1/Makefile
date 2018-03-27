@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chuanxu/Cmake-entry-code-exercises/t1
+CMAKE_SOURCE_DIR = /home/acx/Cmake-entry-code-exercises/t1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chuanxu/Cmake-entry-code-exercises/t1
+CMAKE_BINARY_DIR = /home/acx/Cmake-entry-code-exercises/t1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chuanxu/Cmake-entry-code-exercises/t1/CMakeFiles /home/chuanxu/Cmake-entry-code-exercises/t1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acx/Cmake-entry-code-exercises/t1/CMakeFiles /home/acx/Cmake-entry-code-exercises/t1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chuanxu/Cmake-entry-code-exercises/t1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acx/Cmake-entry-code-exercises/t1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ hello/fast:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

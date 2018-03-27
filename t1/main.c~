@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("hello world!this is cmake.\n");
+	printf("hello world!this is cmake.");
 	return 0;
 
 }
