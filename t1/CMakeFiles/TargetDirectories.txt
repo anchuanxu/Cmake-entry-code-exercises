@@ -1,3 +1,0 @@
-/home/acx/Cmake-entry-code-exercises/t1/CMakeFiles/edit_cache.dir
-/home/acx/Cmake-entry-code-exercises/t1/CMakeFiles/rebuild_cache.dir
-/home/acx/Cmake-entry-code-exercises/t1/CMakeFiles/hello.dir

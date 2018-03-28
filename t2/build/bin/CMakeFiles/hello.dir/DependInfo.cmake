@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/acx/Cmake-entry-code-exercises/t1/main.c" "/home/acx/Cmake-entry-code-exercises/t1/CMakeFiles/hello.dir/main.c.o"
+  "/home/acx/Cmake-entry-code-exercises/t2/src/main.c" "/home/acx/Cmake-entry-code-exercises/t2/build/bin/CMakeFiles/hello.dir/main.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
