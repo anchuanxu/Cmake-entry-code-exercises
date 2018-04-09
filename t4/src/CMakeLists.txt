@@ -1,0 +1,4 @@
+ADD_EXECUTABLE(main ${PROJECT_SOURCE_DIR}/main.c)
+INCLUDE_DIRECTORIES(/usr/include/hello)
+TARGET_LINK_LIBRARIES(main hello)
+TARGET_LINK_LIBRARIES(main libhello.a)
